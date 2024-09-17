@@ -1,0 +1,145 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\'{I}ndice general}{\es@scroman {iii}}{}%
+\contentsline {chapter}{\numberline {1}Variables, estructuras de control y funciones}{1}{}%
+\contentsline {section}{\numberline {1.1}Introducción a JavaScript}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Breve reseña histórica de JavaScript}{1}{}%
+\contentsline {subsection}{\numberline {1.1.2}Coexistencia entre HTML, JS y CSS}{1}{}%
+\contentsline {subsubsection}{HTML}{2}{}%
+\contentsline {subsubsection}{CSS}{2}{}%
+\contentsline {subsubsection}{JavaScript}{2}{}%
+\contentsline {subsubsection}{Coexistencia y Colaboración}{2}{}%
+\contentsline {subsection}{\numberline {1.1.3}Características del lenguaje}{2}{}%
+\contentsline {subsection}{\numberline {1.1.4}Hola Mundo en JavaScript}{3}{}%
+\contentsline {section}{\numberline {1.2}Sintaxis básica y variables}{4}{}%
+\contentsline {subsection}{\numberline {1.2.1}Declaración de variables}{4}{}%
+\contentsline {subsection}{\numberline {1.2.2}Tipos de datos}{4}{}%
+\contentsline {subsubsection}{El valor NaN}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Operadores}{5}{}%
+\contentsline {subsubsection}{Operadores Aritméticos}{5}{}%
+\contentsline {subsubsection}{Operadores de Asignación}{5}{}%
+\contentsline {subsubsection}{Operadores de Comparación}{6}{}%
+\contentsline {subsubsection}{Operadores Lógicos}{6}{}%
+\contentsline {subsubsection}{Operadores Unarios}{6}{}%
+\contentsline {subsubsection}{Operador Ternario}{6}{}%
+\contentsline {section}{\numberline {1.3}Estructuras de control}{6}{}%
+\contentsline {subsection}{\numberline {1.3.1}Condicionales}{7}{}%
+\contentsline {subsubsection}{if-else}{7}{}%
+\contentsline {subsubsection}{switch}{7}{}%
+\contentsline {subsection}{\numberline {1.3.2}Bucles}{7}{}%
+\contentsline {subsubsection}{for}{7}{}%
+\contentsline {subsubsection}{while}{7}{}%
+\contentsline {subsubsection}{do-while}{8}{}%
+\contentsline {subsection}{\numberline {1.3.3}Otras estructuras de control}{8}{}%
+\contentsline {subsubsection}{break y continue}{8}{}%
+\contentsline {section}{\numberline {1.4}Funciones en JavaScript}{8}{}%
+\contentsline {subsection}{\numberline {1.4.1}Declaración de Funciones}{8}{}%
+\contentsline {subsubsection}{Declaración de Función}{8}{}%
+\contentsline {subsubsection}{Expresión de Función}{8}{}%
+\contentsline {subsubsection}{Función Flecha (Arrow Function)}{8}{}%
+\contentsline {subsection}{\numberline {1.4.2}Parámetros y Argumentos}{9}{}%
+\contentsline {subsubsection}{Parámetros por Defecto}{9}{}%
+\contentsline {subsubsection}{El problema con el tipado débil}{9}{}%
+\contentsline {subsection}{\numberline {1.4.3}Retorno de Valores}{9}{}%
+\contentsline {subsection}{\numberline {1.4.4}Scope y Closures}{9}{}%
+\contentsline {subsection}{\numberline {1.4.5}Funciones Inmediatamente Invocadas (IIFE)}{10}{}%
+\contentsline {chapter}{\numberline {2}Objetos y manipulación del DOM}{11}{}%
+\contentsline {section}{\numberline {2.1}Objetos en JavaScript y Paradigmas de Programación}{11}{}%
+\contentsline {subsection}{\numberline {2.1.1}Objetos en JavaScript}{11}{}%
+\contentsline {subsubsection}{Propiedades y Métodos}{11}{}%
+\contentsline {subsubsection}{Creación de Objetos}{11}{}%
+\contentsline {subsubsection}{Acceso a Propiedades y Métodos}{11}{}%
+\contentsline {subsubsection}{Modificación y Adición de Propiedades}{11}{}%
+\contentsline {subsection}{\numberline {2.1.2}Funciones como Objetos de Primera Clase}{11}{}%
+\contentsline {subsection}{\numberline {2.1.3}Programación Orientada a Objetos (POO) en JavaScript}{12}{}%
+\contentsline {subsubsection}{Clases en JavaScript (ES6+)}{12}{}%
+\contentsline {subsubsection}{Herencia}{12}{}%
+\contentsline {subsection}{\numberline {2.1.4}Otro paradigma: la Programación Funcional}{13}{}%
+\contentsline {section}{\numberline {2.2}El DOM y Manipulación de Eventos}{13}{}%
+\contentsline {subsection}{\numberline {2.2.1}¿Qué es el DOM?}{13}{}%
+\contentsline {subsection}{\numberline {2.2.2}Manipulación del DOM}{13}{}%
+\contentsline {subsubsection}{Selección de Elementos}{13}{}%
+\contentsline {subsubsection}{Modificación de Elementos}{13}{}%
+\contentsline {subsubsection}{Creación y Eliminación de Elementos}{13}{}%
+\contentsline {subsection}{\numberline {2.2.3}El Elemento Button}{14}{}%
+\contentsline {subsection}{\numberline {2.2.4}Escuchadores de Eventos}{14}{}%
+\contentsline {subsubsection}{Agregar un Escuchador de Eventos}{14}{}%
+\contentsline {subsubsection}{Tipos Comunes de Eventos}{14}{}%
+\contentsline {subsubsection}{Ejemplo Práctico}{14}{}%
+\contentsline {subsection}{\numberline {2.2.5}Propagación de Eventos y Prevención del Comportamiento por Defecto}{14}{}%
+\contentsline {subsubsection}{Propagación de Eventos (Event Bubbling)}{14}{}%
+\contentsline {subsubsection}{Prevenir el Comportamiento por Defecto}{15}{}%
+\contentsline {section}{\numberline {2.3}Ejemplo Integrador: Contador Interactivo}{15}{}%
+\contentsline {subsection}{\numberline {2.3.1}Estructura HTML}{15}{}%
+\contentsline {subsection}{\numberline {2.3.2}JavaScript (contador.js)}{15}{}%
+\contentsline {subsection}{\numberline {2.3.3}Explicación del Código}{16}{}%
+\contentsline {subsection}{\numberline {2.3.4}Conceptos Aplicados}{16}{}%
+\contentsline {subsection}{\numberline {2.3.5}Probando el Ejemplo}{16}{}%
+\contentsline {chapter}{\numberline {3}Estructuras de datos}{17}{}%
+\contentsline {section}{\numberline {3.1}Arrays}{17}{}%
+\contentsline {subsection}{\numberline {3.1.1}Creación de Arrays}{17}{}%
+\contentsline {subsection}{\numberline {3.1.2}Acceso a Elementos}{17}{}%
+\contentsline {subsection}{\numberline {3.1.3}Métodos de Arrays}{17}{}%
+\contentsline {subsection}{\numberline {3.1.4}Rest Parameters en funciones}{17}{}%
+\contentsline {section}{\numberline {3.2}Sets}{17}{}%
+\contentsline {subsection}{\numberline {3.2.1}Creación de Sets}{18}{}%
+\contentsline {subsection}{\numberline {3.2.2}Métodos de Sets}{18}{}%
+\contentsline {section}{\numberline {3.3}Maps}{18}{}%
+\contentsline {subsection}{\numberline {3.3.1}Creación de Maps}{18}{}%
+\contentsline {subsection}{\numberline {3.3.2}Métodos de Maps}{18}{}%
+\contentsline {section}{\numberline {3.4}Ejemplo Integrador}{18}{}%
+\contentsline {subsection}{\numberline {3.4.1}Código HTML y JavaScript}{18}{}%
+\contentsline {subsection}{\numberline {3.4.2}Explicación del Código}{19}{}%
+\contentsline {chapter}{\numberline {4}Errores, Objetos Globales, Funciones Globales y asincronía en JavaScript}{21}{}%
+\contentsline {section}{\numberline {4.1}Manejo de Errores}{21}{}%
+\contentsline {subsection}{\numberline {4.1.1}Try...Catch}{21}{}%
+\contentsline {subsection}{\numberline {4.1.2}Tipos de Errores}{21}{}%
+\contentsline {subsection}{\numberline {4.1.3}Creación de Errores Personalizados}{21}{}%
+\contentsline {section}{\numberline {4.2}Objetos Globales Populares}{21}{}%
+\contentsline {subsection}{\numberline {4.2.1}Object}{22}{}%
+\contentsline {subsection}{\numberline {4.2.2}Array}{22}{}%
+\contentsline {subsection}{\numberline {4.2.3}String}{22}{}%
+\contentsline {subsection}{\numberline {4.2.4}Math}{22}{}%
+\contentsline {subsection}{\numberline {4.2.5}Date}{22}{}%
+\contentsline {section}{\numberline {4.3}Funciones Globales Populares}{22}{}%
+\contentsline {subsection}{\numberline {4.3.1}parseInt() y parseFloat()}{22}{}%
+\contentsline {subsection}{\numberline {4.3.2}isNaN() y isFinite()}{22}{}%
+\contentsline {subsection}{\numberline {4.3.3}encodeURIComponent() y decodeURIComponent()}{22}{}%
+\contentsline {subsection}{\numberline {4.3.4}setTimeout() y setInterval()}{23}{}%
+\contentsline {section}{\numberline {4.4}Asincronía clásica: Callbacks}{23}{}%
+\contentsline {section}{\numberline {4.5}Promesas}{23}{}%
+\contentsline {section}{\numberline {4.6}Async/Await}{23}{}%
+\contentsline {section}{\numberline {4.7}Fetch API}{24}{}%
+\contentsline {chapter}{\numberline {A}Introducción a HTML}{27}{}%
+\contentsline {section}{\numberline {A.1}Estructura Básica de un Documento HTML}{27}{}%
+\contentsline {section}{\numberline {A.2}Elementos Comunes de HTML}{27}{}%
+\contentsline {section}{\numberline {A.3}Atributos en HTML}{28}{}%
+\contentsline {chapter}{\numberline {B}Introducción a CSS}{29}{}%
+\contentsline {section}{\numberline {B.1}Sintaxis Básica}{29}{}%
+\contentsline {subsection}{\numberline {B.1.1}Selectores}{29}{}%
+\contentsline {subsection}{\numberline {B.1.2}Propiedades y Valores}{29}{}%
+\contentsline {section}{\numberline {B.2}Métodos para Insertar CSS en HTML}{30}{}%
+\contentsline {subsection}{\numberline {B.2.1}CSS en Línea}{30}{}%
+\contentsline {subsection}{\numberline {B.2.2}CSS en el \<head\: del Documento}{30}{}%
+\contentsline {subsection}{\numberline {B.2.3}CSS Externo}{30}{}%
+\contentsline {section}{\numberline {B.3}Conclusión}{31}{}%
+\contentsline {chapter}{\numberline {C}El Estándar ECMAScript: La Base de JavaScript}{33}{}%
+\contentsline {section}{\numberline {C.1}¿Qué es ECMAScript?}{33}{}%
+\contentsline {section}{\numberline {C.2}Historia y Evolución}{33}{}%
+\contentsline {section}{\numberline {C.3}¿Por qué es importante ECMAScript?}{33}{}%
+\contentsline {section}{\numberline {C.4}Características Clave Introducidas en Versiones Principales}{33}{}%
+\contentsline {subsection}{\numberline {C.4.1}ECMAScript 5 (2009)}{33}{}%
+\contentsline {subsection}{\numberline {C.4.2}ECMAScript 2015 (ES6, 2015)}{34}{}%
+\contentsline {subsection}{\numberline {C.4.3}Versiones Posteriores (2016+)}{34}{}%
+\contentsline {section}{\numberline {C.5}Cómo ECMAScript Afecta a los Desarrolladores}{34}{}%
+\contentsline {section}{\numberline {C.6}Ejemplo Práctico: Evolución de una Función}{34}{}%
+\contentsline {section}{\numberline {C.7}El Futuro de ECMAScript}{34}{}%
+\contentsline {section}{\numberline {C.8}Conclusión}{35}{}%
+\contentsline {chapter}{\numberline {D}Introducción a la Programación Funcional en JavaScript}{37}{}%
+\contentsline {section}{\numberline {D.1}Conceptos Clave}{37}{}%
+\contentsline {subsection}{\numberline {D.1.1}Funciones de Primera Clase}{37}{}%
+\contentsline {subsection}{\numberline {D.1.2}Funciones Puras}{37}{}%
+\contentsline {subsection}{\numberline {D.1.3}Inmutabilidad}{37}{}%
+\contentsline {section}{\numberline {D.2}Técnicas de Programación Funcional}{37}{}%
+\contentsline {subsection}{\numberline {D.2.1}Map, Filter, Reduce}{37}{}%
+\contentsline {subsection}{\numberline {D.2.2}Composición de Funciones}{38}{}%
+\contentsline {section}{\numberline {D.3}Ventajas de la Programación Funcional}{38}{}%

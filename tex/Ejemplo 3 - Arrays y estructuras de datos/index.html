@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo 3</title>
+    <script>
+                document.addEventListener( 'DOMContentLoaded' , function() {
+                    let optionsArray = ['Opcion 1' , 'Opcion 2' , 'Opcion 3', 'Opcion 4'];
+                    let selectElement = document.getElementById('optionsSelect');
+                    optionsArray.forEach ( function(option) {
+                        let optionElement = document.createElement('option');
+                        optionElement.textContent = option;
+                        optionElement.value = option;
+                        selectElement.appendChild(optionElement);
+                    });
+                    document.getElementById('alertButton').addEventListener( 'click', function() {
+                        let selectedOption = selectElement.value;
+                        alert ( ' Has seleccionado : ' + selectedOption ) ;
+                    }) ;
+                }) ;
+        </script>
+</head>
+
+<body>
+    <h1> Selecciona una Opcion </h1>
+    <select id="optionsSelect"> </select>
+    <button id="alertButton"> Mostrar Seleccion </button>
+</body>
+
+</html>
