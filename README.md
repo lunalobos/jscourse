@@ -1,2 +1,2 @@
 # jscourse
-A JS course for beginners, project under development.
+Un curso de js para principiantes, bajo desarrollo.
