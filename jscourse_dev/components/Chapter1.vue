@@ -1,5 +1,6 @@
 <template>
     <div class="mt-2 flex flex-col rounded-lg border-2 p-4 shadow-lg w-3/6">
+        <Forward :right-angle-name="rightName" :left-angle-name="leftName"/>
         <h3 class="mt-2 text-2xl font-bold text-cyan-700">{{ `${chapterNumber}` }} - Variables, estructuras de control y
             funciones</h3>
         <h4 class="mt-2 mb-2 text-xl font-bold text-black-700">{{ `${chapterNumber}.${helloSectionNumber}` }} - Hola mundo</h4>
@@ -53,9 +54,18 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed, onMounted } from 'vue';
 import { useSectionStore } from '~~/scripts/stores/sectionStore';
 import { useChapterStore } from '~~/scripts/stores/chapterStore';
+import { useAngleStore } from '~~/scripts/stores/angleStore';
+
+onMounted(() => {
+    useAngleStore().addAngleOn('chapter2', () => {});
+    useAngleStore().addAngleOff('chapter0');
+})
+
+const rightName = 'chapter2';
+const leftName = 'chapter0';
 
 const chapterName = 'Capitulo 1';
 const helloSectionName = 'Hola mundo';
