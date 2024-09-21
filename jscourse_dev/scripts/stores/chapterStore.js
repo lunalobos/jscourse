@@ -19,6 +19,10 @@ export const useChapterStore = defineStore('chapter', () => {
             return -1;
     }
 
-    return { chapters, addChapter, isChapterPresent, getChapterIndex };
+    function clear(){
+        chapters.value = [];
+    }
+
+    return { chapters, addChapter, isChapterPresent, getChapterIndex, clear };
 
 });

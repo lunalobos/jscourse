@@ -23,5 +23,9 @@ export const useSectionStore = defineStore('section', () => {
             return -1;
     }
 
-    return { sections, addSection, isSectionPresent, getSectionIndex };
+    function clear(){
+        sections.value = {};
+    }
+
+    return { sections, addSection, isSectionPresent, getSectionIndex, clear };
 });

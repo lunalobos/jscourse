@@ -29,6 +29,10 @@ export const useSubsectionStore = defineStore('subsection', () => {
             return -1;
     }
 
-    return { subsections, addSubsection, isSubsectionPresent, getSubsectionIndex };
+    function clear(){
+        subsections.value = {};
+    }
+
+    return { subsections, addSubsection, isSubsectionPresent, getSubsectionIndex, clear };
 
 });
