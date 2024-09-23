@@ -1,10 +1,12 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
+import { log } from "../logging";
 
 export const useChapterStore = defineStore('chapter', () => {
     const chapters = ref([]);
 
     function addChapter(chapterName){
+        log(`Anadiendo capítulo ${chapterName}`, 'chapterStore', 'debug', chapterName);
         chapters.value.push(chapterName);
     }
 
@@ -21,6 +23,7 @@ export const useChapterStore = defineStore('chapter', () => {
 
     function clear(){
         chapters.value = [];
+        log('Store de capitulos limpiado', 'chapterStore', 'debug');
     }
 
     return { chapters, addChapter, isChapterPresent, getChapterIndex, clear };

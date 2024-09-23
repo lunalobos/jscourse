@@ -7,17 +7,13 @@
 
 
 <script setup>
-import { useSectionStore } from '~~/scripts/stores/sectionStore';
-import { useChapterStore } from '~~/scripts/stores/chapterStore';
-import { useSubsectionStore } from '~~/scripts/stores/subsectionStore';
 import { useVisibleStore } from '~~/scripts/stores/visibleStore';
 import { computed, onMounted } from 'vue';
+import { log } from '~/scripts/logging';
 import Chapter1 from '~~/components/Chapter1.vue';
 
 onMounted(() => {
-    useChapterStore().clear();
-    useSectionStore().clear();
-    useSubsectionStore().clear();
+    log('Cargango página principal', 'index', 'info');
     useVisibleStore().setVisibleComponentName('chapter1');
 })
 

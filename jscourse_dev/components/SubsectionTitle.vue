@@ -10,7 +10,7 @@ import { computed, onMounted } from 'vue';
 import { useChapterStore } from '~~/scripts/stores/chapterStore';
 import { useSectionStore } from '~~/scripts/stores/sectionStore';
 import { useSubsectionStore } from '~/scripts/stores/subsectionStore';
-
+import { log } from '~~/scripts/logging';
 const props = defineProps({
     chapter: {
         type: String,
@@ -27,8 +27,12 @@ const props = defineProps({
 });
 
 onMounted(() => {
+    log(`Cargando título de subsección ${props.subsection} de la sección  ${props.section} del capitulo ${props.chapter}`, 'SubsectionTitle', 'debug');
     if(!useSubsectionStore().isSubsectionPresent(props.subsection, props.section, props.chapter)){
+        log(`Añadiendo subsección ${props.subsection} de la sección ${props.section} del capitulo ${props.chapter} al store`, 'SubsectionTitle', 'debug');
         useSubsectionStore().addSubsection(props.subsection, props.section, props.chapter);
+    } else {
+        log(`La subseccion ${props.subsection} de la sección ${props.section} del capitulo ${props.chapter} ya existe en el store`, 'SubsectionTitle', 'debug');
     }
 });
 

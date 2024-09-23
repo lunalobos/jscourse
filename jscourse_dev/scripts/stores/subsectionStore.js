@@ -1,10 +1,12 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-
+import { log } from "../logging";
 export const useSubsectionStore = defineStore('subsection', () => {
     const subsections = ref({});
 
     function addSubsection(subsectionName, sectionName, chapterName){
+        log(`añadiendo subsección ${subsectionName} a la sección ${sectionName} del capítulo ${chapterName}`, 
+            'subsectionStore', 'debug', subsectionName, sectionName, chapterName);
         if(subsections.value[chapterName] === undefined){
             subsections.value[chapterName] = [];
         }
@@ -31,6 +33,7 @@ export const useSubsectionStore = defineStore('subsection', () => {
 
     function clear(){
         subsections.value = {};
+        log('Store de subsecciones limpiado', 'subsectionStore', 'debug');
     }
 
     return { subsections, addSubsection, isSubsectionPresent, getSubsectionIndex, clear };
