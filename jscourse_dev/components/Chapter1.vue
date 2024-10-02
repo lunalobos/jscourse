@@ -504,7 +504,7 @@ if (nota >= 90) {
 } else if (nota >= 50) {
     console.log("Aprobado");
 } else {
-    console.log("Suspenso");
+    console.log("Desaprobado");
 }
             </code>
         </pre>
@@ -542,6 +542,14 @@ switch (dia) {
 }
             </code>
         </pre>
+        <p class="mt-2 mb-2">
+            El funcionamiento del switch es tal que se evalua desde el principio si la variable dia
+            es igual a uno de los casos, comenzando por Lunes, siguiendo por Viernes, y así siguiendo. La 
+            evaluación es en el mismo orden que los casos enumerados en nuestro código. Una vez que se 
+            detecta que la variable dia es igual a uno de los casos se ejecuta todo el código hasta 
+            encontrar un break o un return. Si no se encuentra un caso igual a la variable se ejecuta 
+            el código del caso default. 
+        </p>
 
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Bucle for" />
 
@@ -560,7 +568,20 @@ for (let i = 0; i < 5; i++) {
 }
             </code>
         </pre>
-
+        <p class="mt-2 mb-2">
+            Dentro del paréntesis del for se declara la variable 
+            <code>i</code> 
+            con un <code>let</code> para poder reasignarla.
+            La condición va a continuación, que es que 
+            <code>i</code> sea menor que 5 (en este caso).
+            La expresión final indica como cambia la variable 
+            <code>i</code>, en este caso se usa el operador unario ++
+            para indicar que <code>i</code> se incrementa en uno.
+            El código encerrado dentro las llaves del  
+            <code>for</code> se ejecutará para cada valor de 
+            <code>i</code>, comenzado por 0
+            y acabando en el valor 4.
+        </p>
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Bucle while" />
         <p class="mt-2 mb-2">
             El bucle while
@@ -578,7 +599,10 @@ while (i < 5) {
 }
             </code>
         </pre>
-
+        <p class="mt-2 mb-2">
+            El código encerrado dentro las llaves del while se ejecuta mientras la condición
+            encerrada entre paréntesis(<code> i < 5</code>) sea verdadera
+        </p>
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Bucle do-while" />
         <p class="mt-2 mb-2">
             Similar al bucle while
@@ -600,10 +624,10 @@ do {
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control"
             subsection="Sentencias break y continue" />
         <p class="mt-2 mb-2">
-            La sentencia break
+            La sentencia <code>break</code>
             <NQuote name="break" link="https://tc39.es/ecma262/#sec-break-statement"
                 summary="ECMA262 2025 - 14.9 - The break Statement" :chapter="chapterName" />
-            se utiliza para salir inmediatamente de un bucle, mientras que continue
+            se utiliza para salir inmediatamente de un bucle, mientras que <code>continue</code>
             <NQuote name="continue" link="https://tc39.es/ecma262/#sec-continue-statement"
                 summary="ECMA262 2025 - 14.8 - The continue Statement" :chapter="chapterName" />
             salta a la siguiente iteración del bucle.
@@ -644,6 +668,24 @@ function saludar(nombre) {
 saludar("Maria"); // Salida: Hola, Maria!
             </code>
         </pre>
+        <p class="mt-2 mb-2">
+            Nótese la sintaxis, se coloca la palabra reservada <code>function</code> luego
+            el nombre o identificador de la función, en nuestro caso <code>saludar</code>.
+            Luego se abren paréntesis y se enumeran los argumentos, en nuestro caso solo tenemos
+            un argumento: <code>nombre</code>. Si tuvieramos mas parámetros deberíamos enumerarlos
+            y separarlos con comas, por ejemplo <code>nombre, apellido, dni</code>.
+        </p>
+        <p class="mt-2 mb-2">
+            Para invocar el código dentro de nuestra función debemos usar el identificador y proveerle
+            un argumento (en nuestro caso la función sólo posee un argumento) que hará las veces
+            de <code>nombre</code> y deberá encerrarse entre paréntesis inmediatamente a continuación
+            del identificador o nombre de la función, sin espacios en el medio.
+        </p>
+        <p>
+            La ventaja del uso de funciones es que el código puede adaptarse al valor de los argumentos
+            que proveamos al llamarlas, es decir es código que adapta a nuestras necesidades y que no
+            necesitamos reescribir.
+        </p>
         <p class="mt-2 mb-2">
             También se puede declarar una función asignandola a una variable mediante una expresión
             de función:
