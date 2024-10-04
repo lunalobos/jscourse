@@ -11,6 +11,7 @@ import { useVisibleStore } from '~~/scripts/stores/visibleStore';
 import { computed, onMounted } from 'vue';
 import { log } from '~/scripts/logging';
 import Chapter1 from '~~/components/Chapter1.vue';
+import Chapter2 from '~/components/Chapter2.vue';
 
 onMounted(() => {
     log('Cargango página principal', 'index', 'info');
