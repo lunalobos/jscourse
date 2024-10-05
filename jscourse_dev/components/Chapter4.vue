@@ -1,15 +1,33 @@
 <template>
     <div class="mt-2 flex flex-col rounded-lg border-2 p-4 shadow-lg w-4/6">
-        <Angles :right-angle-name="rightName" :left-angle-name="leftName" />
+        <Angles :left-angle-name="leftName" />
         <ChapterTitle :name="chapterName" />
         <SectionTitle :chapter="chapterName" section="Manejo de Errores" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             JavaScript proporciona mecanismos para manejar errores y excepciones que pueden ocurrir 
             durante la ejecución del código.
         </p>
+        
+        <SubsectionTitle :chapter="chapterName" section="Manejo de Errores" subsection="Tipos de Errores" />
+        <p class="mt-2 mb-2 text-justify">
+            JavaScript tiene varios tipos de errores
+            <NQuote name="errores" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+                summary="Error | MDN" :chapter="chapterName" />
+            predefinidos:
+        </p>
+        <ul class="ps-5 mt-2 mb-2 text-justify space-y-1 list-disc list-inside">
+            <li><code>Error</code>: Error genérico</li>
+            <li><code>SyntaxError</code>: Error de sintaxis</li>
+            <li><code>ReferenceError</code>: Referencia a una variable no definida</li>
+            <li><code>TypeError</code>: Operación en un tipo de dato incorrecto</li>
+            <li><code>RangeError</code>: Valor numérico fuera de rango</li>
+        </ul>
         <SubsectionTitle :chapter="chapterName" section="Manejo de Errores" subsection="Try...Catch" />
-        <p class="mt-2 mb-2">
-            El bloque try...catch es la estructura básica para manejar errores en JavaScript:
+        <p class="mt-2 mb-2 text-justify">
+            El bloque try...catch 
+            <NQuote name="try...catch" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"
+                summary="try...catch | MDN" :chapter="chapterName" />
+            es la estructura básica para manejar errores en JavaScript:
         </p>
         <pre>
             <code class="language-javascript">
@@ -23,20 +41,9 @@ try {
 }
             </code>
         </pre>
-        <SubsectionTitle :chapter="chapterName" section="Manejo de Errores" subsection="Tipos de Errores" />
-        <p class="mt-2 mb-2">
-            JavaScript tiene varios tipos de errores predefinidos:
-        </p>
-        <ul>
-            <li><code>Error</code>: Error genérico</li>
-            <li><code>SyntaxError</code>: Error de sintaxis</li>
-            <li><code>ReferenceError</code>: Referencia a una variable no definida</li>
-            <li><code>TypeError</code>: Operación en un tipo de dato incorrecto</li>
-            <li><code>RangeError</code>: Valor numérico fuera de rango</li>
-        </ul>
         <SubsectionTitle :chapter="chapterName" section="Manejo de Errores" 
             subsection="Creación de errores personalizados" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Se pueden crear errores personalizados extendiendo la clase Error:
         </p>
         <pre>
@@ -52,11 +59,11 @@ throw new MiErrorPersonalizado('Este es un error personalizado');
             </code>
         </pre>
         <SectionTitle :chapter="chapterName" section="Objetos Globales y clases útiles" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             JavaScript tiene varios objetos globales incorporados que proporcionan funcionalidad útil.
         </p>
-        <SubsectionTitle :chapter="chapterName" section="Objetos Globales" subsection="Object" />
-        <p class="mt-2 mb-2">
+        <SubsectionTitle :chapter="chapterName" section="Objetos Globales y clases útiles" subsection="Object" />
+        <p class="mt-2 mb-2 text-justify">
             Object es el objeto raíz de la jerarquía de objetos en JavaScript. Posee además varios métodos
             utilitarios. Estos métodos son estáticos, a diferencia de los que vimos en el apartado de
             objetos, estos métodos están asociados a la clase y no al los objetos creados con esa clase.
@@ -70,8 +77,8 @@ console.log(Object.values(obj)); // [1, 2]
             </code>
         </pre>
         
-        <SubsectionTitle :chapter="chapterName" section="Objetos Globales" subsection="Math" />
-        <p class="mt-2 mb-2">
+        <SubsectionTitle :chapter="chapterName" section="Objetos Globales y clases útiles" subsection="Math" />
+        <p class="mt-2 mb-2 text-justify">
             Proporciona funciones matemáticas y constantes:
         </p>
         <pre>
@@ -80,8 +87,8 @@ console.log(Math.PI); // 3.141592653589793
 console.log(Math.random()); // Numero aleatorio entre 0 y 1
             </code>
         </pre>
-        <SubsectionTitle :chapter="chapterName" section="Objetos Globales" subsection="Date" />
-        <p class="mt-2 mb-2">
+        <SubsectionTitle :chapter="chapterName" section="Objetos Globales y clases útiles" subsection="Date" />
+        <p class="mt-2 mb-2 text-justify">
             Permite trabajar con fechas y horas:
         </p>
         <pre>
@@ -91,11 +98,11 @@ console.log(ahora.toISOString());
             </code>
         </pre>
         <SectionTitle :chapter="chapterName" section="Funciones Globales" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             JavaScript incluye varias funciones globales que pueden ser utilizadas.
         </p>
         <SubsectionTitle :chapter="chapterName" section="Funciones Globales" subsection="parseInt() y parseFloat()" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Ambas funciones convierten cadenas en números:
         </p>
         <pre>
@@ -105,7 +112,7 @@ console.log(parseFloat('3.14')); // 3.14
             </code>
         </pre>
         <SubsectionTitle :chapter="chapterName" section="Funciones Globales" subsection="isNaN() y isFinite()" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Ambas funciones verifican si un valor es NaN o finito:
         </p>
         <pre>
@@ -115,7 +122,7 @@ console.log(isFinite(1/0)); // false
             </code>
         </pre>
         <SubsectionTitle :chapter="chapterName" section="Funciones Globales" subsection="setTimeout() y setInterval()" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Permiten ejecutar código después de un retraso o a intervalos regulares:
         </p>
         <pre>
@@ -128,15 +135,19 @@ const intervalo = setInterval(() => console.log('Intervalo'), 1000);
             </code>
         </pre>
         <SectionTitle :chapter="chapterName" section="Asincronía en JavaScript" />
-        <p class="mt-2 mb-2">
-            JavaScript es un lenguaje de programación de un solo hilo. Si el único hilo de ejecución que poseemos se queda ejecutando una operación muy larga estamos en un problema.
-            Para sortear esto es que el lenguaje permite operaciones asíncronas. 
+        <p class="mt-2 mb-2 text-justify">
+            JavaScript es un lenguaje de programación de un solo hilo. Si el único hilo de ejecución 
+            que poseemos se queda ejecutando una operación muy larga estamos en un problema.
+            Para sortear esto es que el lenguaje permite operaciones asíncronas
+            <NQuote name="asincronía" link="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing"
+                summary="Asynchronous JavaScript" :chapter="chapterName" />
+            . 
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Una operación asíncrona es una operación o sección del código que se especifica que debe 
             ejecutarse en algún momento, pero no se especifica cuando, de ahí su nombre "asíncrona".  
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Una vez que el interprete de JavaScript alcansa una sección de código asíncrona deja esta 
             porción de código en espera y gestiona según un criterio
             que depende del intérprete el momento en el que se ejecutará. Esto le da flexibilidad al 
@@ -144,11 +155,11 @@ const intervalo = setInterval(() => console.log('Intervalo'), 1000);
             o de mucha latencia se ejecuten y no permitan que la interfaz sea fluida. Esto permite 
             optimizar el uso del único hilo que del cual dispone javascript.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Para especificar que una porción de código es asíncrona se utilizan callbacks y promesas, 
             además de un nuevo enfoque conocido como await async.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Un callback es una función que se pasa como argumento a otra función y se ejecuta después 
             de que esta última haya terminado.
         </p>
@@ -166,13 +177,16 @@ operacionAsincrona(() => {
 });
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             En este ejemplo, <code>setTimeout</code> simula una operación asíncrona que tarda 1 
             segundo en completarse.
         </p>
         <SubsectionTitle :chapter="chapterName" section="Asincronía en JavaScript" subsection="Promesas" />
-        <p class="mt-2 mb-2">
-            Las promesas proporcionan una forma más elegante de manejar operaciones asíncronas. 
+        <p class="mt-2 mb-2 text-justify">
+            Las promesas
+            <NQuote name="promesa" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+                summary="Promises - JavaScript | MDN" :chapter="chapterName" />
+            proporcionan una forma más elegante de manejar operaciones asíncronas. 
             Una promesa representa un valor que puede no estar disponible inmediatamente, pero lo 
             estará en el futuro.
         </p>
@@ -192,12 +206,12 @@ operacionPromesa()
   .catch(error => console.error(error));
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Las promesas tienen tres estados: pendiente, cumplida o rechazada. Utilizamos 
             <code>then()</code> para manejar el éxito y <code>catch()</code> para manejar errores.
         </p>
         <SubsectionTitle :chapter="chapterName" section="Asincronía en JavaScript" subsection="Await async" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Async/Await es una sintaxis más reciente que facilita el trabajo con promesas:
         </p>
         <pre>
@@ -215,13 +229,16 @@ ejecutarOperacion();
             </code>
         </pre>
         <SectionTitle :chapter="chapterName" section="Fetch API" />
-        <p class="mt-2 mb-2">
-            La API Fetch proporciona una interfaz para realizar solicitudes HTTP. Devuelve una 
+        <p class="mt-2 mb-2 text-justify">
+            La API Fetch 
+            <NQuote name="fetch" link="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+                summary="Fetch API - JavaScript | MDN" :chapter="chapterName" />
+            proporciona una interfaz para realizar solicitudes HTTP. Devuelve una 
             promesa que se resuelve con la respuesta a la solicitud.
         </p>
         <pre>
             <code class="language-javascript">
-8async function generarUUID() {
+async function generarUUID() {
   try {
     const respuesta = await fetch('https://www.uuidtools.com/api/generate/v4');
     if (!respuesta.ok) {
@@ -237,25 +254,33 @@ ejecutarOperacion();
 generarUUID();
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Este ejemplo utiliza <code>fetch</code> para hacer una solicitud GET a la API de UUIDTools 
             para generar un UUID versión 4. La respuesta se procesa como JSON y se muestra el UUID 
             generado.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             La función <code>fetch</code> devuelve una promesa que se resuelve con un objeto 
             <code>Response</code>. Utilizamos <code>await</code> dos veces: una para esperar la respuesta 
             de la red y otra para parsear el cuerpo de la respuesta como JSON.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Este ejemplo integra los conceptos de asincronía, promesas y el uso de la API Fetch en una 
             aplicación práctica.
         </p>
+        <Bibliography :chapter="chapterName" />
     </div>
 </template>
 <script setup>
+import { useBibliographyStore } from '~/scripts/stores/bibliographyStore';
+
+onMounted(() => {
+    useBibliographyStore().registerChapter('Errores, Objetos Globales, Funciones Globales y asincronía en JavaScript');
+})
+
+
 const chapterName = 'Errores, Objetos Globales, Funciones Globales y asincronía en JavaScript';
-const rightName = 'chapter5';
+
 const leftName = 'chapter3';
 
 </script>

@@ -5,54 +5,54 @@
         <ChapterTitle :name="chapterName" />
 
         <SectionTitle :chapter="chapterName" section="Breve reseña histórica de JavaScript" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Inicialmente, JavaScript fue pensado como un lenguaje de scripting ligero, complementario a Java, que se
             ejecutaba en el lado del cliente (navegador web). Su sintaxis fue influenciada por lenguajes como C, Java, y
             Self, buscando ser accesible y fácil de aprender para los desarrolladores.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             En sus primeros años, JavaScript fue subestimado y muchas veces criticado por sus limitaciones y problemas
             de compatibilidad entre diferentes navegadores. Sin embargo, su capacidad para manipular el Documento de
             Modelo de Objetos (DOM) y su versatilidad para crear efectos interactivos lo hicieron indispensable para el
             desarrollo web.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             A medida que la web evolucionaba, también lo hizo JavaScript. La estandarización del lenguaje por la
             Asociación Europea de Fabricantes de Computadoras (ECMA) en 1997, bajo el nombre de ECMAScript, fue un paso
             crucial. La especificación ECMAScript proporcionó una base estándar para que los desarrolladores y los
             navegadores pudieran implementar y mejorar JavaScript de manera coherente.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El lanzamiento de ECMAScript 5 (ES5) en 2009 fue un hito importante, introduciendo características como el
             modo estricto,
             los métodos `Array.prototype.forEach`, `Object.defineProperty`, y más. Este estándar hizo que el lenguaje
             fuera más robusto y adecuado para aplicaciones más grandes y complejas.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El verdadero renacimiento de JavaScript llegó con ECMAScript 6 (ES6), también conocido como ECMAScript 2015.
             ES6 trajo consigo una gran cantidad de nuevas características y mejoras, como las clases, módulos, promesas,
             la sintaxis de flecha (`=>`), y `let` y `const` para el ámbito de bloque. Estas adiciones transformaron a
             JavaScript en un lenguaje moderno.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Con la llegada de Node.js en 2009, JavaScript trascendió el navegador y se convirtió en un lenguaje de
             propósito general. Node.js permitió a los desarrolladores utilizar JavaScript para escribir código del lado
             del servidor, manejando aplicaciones web completas con un único lenguaje de programación.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Hoy en día, las bibliotecas y frameworks como React, Angular, Vue.js, y muchos otros han ampliado aún más
             las posibilidades de JavaScript, facilitando el desarrollo de aplicaciones complejas y de alto rendimiento.
         </p>
 
         <SectionTitle :chapter="chapterName" section="Coexistencia entre HTML, CSS y JS" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El desarrollo web moderno del lado del cliente se basa en la integración y coexistencia de tres tecnologías
             fundamentales: HTML, CSS y JavaScript. Cada una de estas tecnologías tiene un propósito específico y se
             complementan entre sí para crear experiencias web dinámicas y atractivas.
         </p>
 
         <SubsectionTitle :chapter="chapterName" section="Coexistencia entre HTML, CSS y JS" subsection="HTML" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             HTML
             <NQuote name="html" link="https://developer.mozilla.org/en-US/docs/Web/HTML"
                 summary="MDN - HTML: HyperText Markup Language" :chapter="chapterName" />
@@ -63,7 +63,7 @@
         </p>
 
         <SubsectionTitle :chapter="chapterName" section="Coexistencia entre HTML, CSS y JS" subsection="CSS" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             CSS
             <NQuote name="css" link="https://developer.mozilla.org/en-US/docs/Glossary/CSS"
                 summary="MDN - CSS: Cascading Style Sheets" :chapter="chapterName" />
@@ -75,7 +75,7 @@
         </p>
 
         <SubsectionTitle :chapter="chapterName" section="Coexistencia entre HTML, CSS y JS" subsection="JavaScript" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             JavaScript
             <NQuote name="javascript" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 summary="MDN - JavaScript" :chapter="chapterName" />
@@ -88,7 +88,7 @@
 
         <SubsectionTitle :chapter="chapterName" section="Coexistencia entre HTML, CSS y JS"
             subsection="Coexistencia y Colaboración" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             La combinación de HTML, CSS y JavaScript permite crear aplicaciones web complejas y ricas en
             funcionalidades:
         </p>
@@ -104,7 +104,7 @@
             </li>
         </ul>
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             En resumen, mientras que HTML y CSS se enfocan en la estructura y apariencia, JavaScript se encarga de la
             lógica y la interacción, logrando así una sinergia que permite el desarrollo de sitios web modernos y
             responsivos.
@@ -112,31 +112,31 @@
 
         <SectionTitle :chapter="chapterName" section="Características del lenguaje" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Algunas características clave de JavaScript son:
         </p>
         <ul class="space-y-1  list-disc list-inside">
-            <li>
+            <li class="text-justify">
                 <span class="font-bold">Dinámicamente tipado:</span> Los tipos de las variables se determinan en
                 tiempo de ejecución y pueden cambiar durante la ejecución del programa.
             </li>
-            <li>
+            <li class="text-justify">
                 <span class="font-bold">Multiparadigma:</span> Soporta programación funcional y
                 orientada a objetos.
             </li>
-            <li>
+            <li class="text-justify">
                 <span class="font-bold">Ejecución en el cliente:</span> Se ejecuta principalmente en el navegador
                 del cliente, permitiendo manipulación del DOM y interactividad sin necesidad de recargar la página.
             </li>
-            <li>
+            <li class="text-justify">
                 <span class="font-bold">Asincronía:</span> Permite operaciones asíncronas, esenciales para la
                 interacción con servidores y APIs.
             </li>
-            <li>
+            <li class="text-justify">
                 <span class="font-bold">Versatilidad:</span> Además del desarrollo web, se utiliza en desarrollo de
                 servidores (Node.js), aplicaciones móviles (React Native), y aplicaciones de escritorio (Electron).
             </li>
-            <li>
+            <li class="text-justify">
                 <span class="font-bold">Amplio ecosistema:</span> Cuenta con una gran cantidad de bibliotecas y
                 frameworks que extienden sus capacidades.
             </li>
@@ -144,7 +144,7 @@
 
         <SectionTitle :chapter="chapterName" :section="helloSectionName" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Hay muchas maneras de crear un "Hola Mundo" en JavaScript. Comencemos por la más simple: utilizar la
             variable console junto con el método log.
         </p>
@@ -153,16 +153,16 @@
     console.log('Hola mundo');
         </code></pre>
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Una sentencia es una instrucción, el componente más básico de un programa. En JavaScript, las sentencias
             suelen ejecutarse una tras otra, en el orden en que están escritas, gracias al intérprete del lenguaje.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Aunque generalmente las sentencias se escriben en una sola línea, esto no es obligatorio. Cada una debería
             terminar con un punto y coma, aunque el intérprete puede completarlo automáticamente. Sin embargo, es una
             buena práctica añadir siempre el punto y coma para mayor claridad y consistencia.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Por ejemplo, este simple "Hola Mundo" es una sentencia, pero ¿en qué entorno se ejecuta JavaScript? Al igual
             que otros lenguajes interpretados, JavaScript necesita un entorno de ejecución, y el más común es el
             navegador web. Para entender mejor este contexto, veamos cómo funciona JavaScript en el navegador y cómo
@@ -172,7 +172,7 @@
         <pre><code class="language-html">
             {{ htmlCode }}
         </code></pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             En este ejemplo:
         </p>
         <ul class="ml-4 list-disc">
@@ -182,7 +182,7 @@
                 función que le estamos asignado.</li>
             <li>La función alert() muestra un cuadro de diálogo con el mensaje "Hola Mundo".</li>
         </ul>
-        <p class="mt-2 mb-2">Hemos usado funciones y variables globales como console, window y alert, mas adelante
+        <p class="mt-2 mb-2 text-justify">Hemos usado funciones y variables globales como console, window y alert, mas adelante
             desarrollaremos esto. Además ahora puede verse con mas "claridad" este entorno de ejecución, javascript está
             en interacción constante con el navegador y la página web. Los bloques scripts, que pueden estar dentro del
             body
@@ -193,7 +193,7 @@
 
         <SectionTitle :chapter="chapterName" :section="variablesName" />
 
-        <p class="mt-2 mb-2">JavaScript tiene tres formas de declarar variables: <span class="font-bold">var</span>
+        <p class="mt-2 mb-2 text-justify">JavaScript tiene tres formas de declarar variables: <span class="font-bold">var</span>
             <NQuote name="var" link="https://tc39.es/ecma262/#sec-variable-statement"
                 summary="ECMA262 2025 - 14.3.2 - Variable Statement" :chapter="chapterName" />
             ,<span class="font-bold">let</span>, y <span class="font-bold">const</span>
@@ -241,7 +241,7 @@ let z;
 z = 25;
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Es importante no asignar valores a variables no declaradas ya que esto puede volver el código confuso.
             JavaScript crea aquellas variables que no declaramos pero que de todas formas asignamos. Si bien
             JavaScript nos ofrece esta característica es mas claro no usarla y declarar todas las variables.
@@ -249,7 +249,7 @@ z = 25;
 
         <SectionTitle :chapter="chapterName" :section="typesName" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Javascript es un lenguaje que posee tipos de datos primitivos (los mas básicos) y objetos
             <NQuote name="types" link="https://tc39.es/ecma262/#sec-ecmascript-language-types"
                 summary="ECMA262 2025 - 6.1 - ECMAScript Language Types" :chapter="chapterName" />
@@ -259,7 +259,7 @@ z = 25;
             null).
             Los objetos son un tipo de dato muy importante que veremos mas adelante.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Cuando declaramos una variable con let esta puede cambiar de tipo cuando la reasignamos, esto es una
             caracterísitca
             de javascript. Es por esto que se dice que es un lenguaje débilmente tipado, las variables no tienen
@@ -278,11 +278,11 @@ let undef = undefined;// undefined
 let nul = null;      // null
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             En el ejemplo puede observarse que los literales de string pueden crearse con comillas simples o dobles.
             En general usaremos comillas simples.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Ademas de las comillas simples los strings pueden crearse con comillas invertidas (`). Este tipo de
             cadenas se conocen como template literals
             <NQuote name="templateLiteral"
@@ -304,7 +304,7 @@ console.log(mensajeDespues); // la consola mostrará Hola, mi nombre es Juan.
 
         <SubsectionTitle :chapter="chapterName" :section="typesName" :subsection="nanName" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             NaN
             <NQuote name="nan"
                 link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN"
@@ -313,7 +313,7 @@ console.log(mensajeDespues); // la consola mostrará Hola, mi nombre es Juan.
             Por mas contradictorio que paresca, el valor que se usa para indicar que algo no es un número
             es de tipo number.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Por ejemplo, el resultado de la división entre 0 es NaN.
         </p>
         <pre>
@@ -323,7 +323,7 @@ let div = num / 0;
 console.log(div); // la consola mostrará NaN                
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Para comprobar que una variable es NaN se debe usar la función global isNaN(), solo de esta
             manera es posible comprobarlo. NaN es un valor que no admite comparaciones, incluso si se
             compara consigo mismo el resultado es falso. Justamente a continuación veremos como comparar valores
@@ -332,7 +332,7 @@ console.log(div); // la consola mostrará NaN
 
         <SectionTitle :chapter="chapterName" :section="operatorsName" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Los operadores
             <NQuote name="operators" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators"
                 summary="MDN - Operators: " :chapter="chapterName" />
@@ -342,7 +342,7 @@ console.log(div); // la consola mostrará NaN
 
         <SubsectionTitle :chapter="chapterName" :section="operatorsName" :subsection="comparatorsName" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Estos operadores comparan valores y devuelven un booleano, con lo cual posibilitan que el lenguaje pueda
             establecer flujos de control básicos.
         </p>
@@ -362,7 +362,7 @@ console.log(a >= 5);   // Mayor o igual que: true
 console.log(a <= 4);   // Menor o igual que: false
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Como se ve en el ejemplo el operador == hace coerción, es decir que convierte uno de los valores al tipo del
             otro, la convención para esta conversión esta establecida por ECMAScript
             <NQuote name="islooselyequal" link="https://tc39.es/ecma262/#sec-islooselyequal"
@@ -371,7 +371,7 @@ console.log(a <= 4);   // Menor o igual que: false
         </p>
 
         <SubsectionTitle :chapter="chapterName" :section="operatorsName" subsection="Operadores Aritméticos" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Estos operadores realizan operaciones matemáticas. Veamos un ejemplo para ilustrar su uso.
         </p>
         <pre>
@@ -389,7 +389,7 @@ console.log(a ** b); // Exponenciacion: 1000
         </pre>
 
         <SubsectionTitle :chapter="chapterName" :section="operatorsName" subsection="Operadores de Asignación" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Estos operadores asignan valores a variables. Veamos un ejemplo para ilustrar su uso.
         </p>
 
@@ -416,7 +416,7 @@ console.log(x);  // 2
         </pre>
 
         <SubsectionTitle :chapter="chapterName" :section="operatorsName" subsection="Operadores Lógicos" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Estos operadores trabajan operan sobre valores booleanos. Veamos
             un ejemplo.
         </p>
@@ -435,11 +435,11 @@ console.log(0 || 3);  // 3 (retorna el primer valor verdadero)
 console.log(!'');     // true ('' es falsy)
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             La naturaleza de los operadores de comparación y los operadores lógicos en javascript no siempre
             es tan evidente. A proposito de esto existe un repositorio en GitHub que aborda esta temática.
         </p>
-        <p class="mt-2 mb-2 flex flex-row">
+        <p class="mt-2 mb-2 text-justify flex flex-row">
             <GitHub />
             <a href="https://github.com/denysdovhan/wtfjs"
                 class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
@@ -464,13 +464,13 @@ console.log(-a);   // Negacion unaria: -5
         </pre>
 
         <SectionTitle :chapter="chapterName" section="Estructuras de control" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Las estructuras de control en JavaScript permiten alterar el flujo de ejecución del código
             basándose en ciertas condiciones o repetir bloques de código un número determinado de veces.
         </p>
 
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Sentencia if-else" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             La estructura if-else
             <NQuote name="if-else" link="https://tc39.es/ecma262/#sec-if-statement"
                 summary="ECMA262 2025 - 14.6 - The if Statement" :chapter="chapterName" />
@@ -488,7 +488,7 @@ if (edad >= 18) {
 }
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             También se puede usar else if para comprobar múltiples condiciones encadenando un
             nuevo if-else tras el primer if-else:
         </p>
@@ -508,14 +508,14 @@ if (nota >= 90) {
 }
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             De todas maneras, no se recomienda usar if-else para condiciones multiples muy grandes, ya
             que vuelve muy lentos los programas.
         </p>
 
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Sentencia switch" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             La estructura switch
             <NQuote name="switch" link="https://tc39.es/ecma262/#sec-switch-statement"
                 summary="ECMA262 2025 - 14.12 - The switch Statement" :chapter="chapterName" />
@@ -542,7 +542,7 @@ switch (dia) {
 }
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El funcionamiento del switch es tal que se evalua desde el principio si la variable dia
             es igual a uno de los casos, comenzando por Lunes, siguiendo por Viernes, y así siguiendo. La 
             evaluación es en el mismo orden que los casos enumerados en nuestro código. Una vez que se 
@@ -553,7 +553,7 @@ switch (dia) {
 
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Bucle for" />
 
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Los bucles permiten ejecutar un bloque de código repetidamente mientras se cumpla una condición.
             El bucle for
             <NQuote name="for" link="https://tc39.es/ecma262/#sec-for-statement"
@@ -568,7 +568,7 @@ for (let i = 0; i < 5; i++) {
 }
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Dentro del paréntesis del for se declara la variable 
             <code>i</code> 
             con un <code>let</code> para poder reasignarla.
@@ -583,7 +583,7 @@ for (let i = 0; i < 5; i++) {
             y acabando en el valor 4.
         </p>
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Bucle while" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El bucle while
             <NQuote name="while" link="https://tc39.es/ecma262/#sec-while-statement"
                 summary="ECMA262 2025 - 14.7.3 - The while Statement" :chapter="chapterName" />
@@ -599,12 +599,12 @@ while (i < 5) {
 }
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El código encerrado dentro las llaves del while se ejecuta mientras la condición
             encerrada entre paréntesis(<code> i < 5</code>) sea verdadera
         </p>
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control" subsection="Bucle do-while" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Similar al bucle while
             <NQuote name="doWhile" link="https://tc39.es/ecma262/#sec-do-while-statement"
                 summary="ECMA262 2025 - 14.7.2 - The do-while Statement" :chapter="chapterName" />
@@ -623,7 +623,7 @@ do {
 
         <SubsectionTitle :chapter="chapterName" section="Estructuras de control"
             subsection="Sentencias break y continue" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             La sentencia <code>break</code>
             <NQuote name="break" link="https://tc39.es/ecma262/#sec-break-statement"
                 summary="ECMA262 2025 - 14.9 - The break Statement" :chapter="chapterName" />
@@ -644,7 +644,7 @@ for (let i = 0; i < 5; i++) {
         </pre>
 
         <SectionTitle :chapter="chapterName" section="Funciones" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Las funciones
             <NQuote name="functions" link="https://developer.mozilla.org/en-US/docs/Glossary/Function"
                 summary="MDN - Function" :chapter="chapterName" />
@@ -653,7 +653,7 @@ for (let i = 0; i < 5; i++) {
         </p>
 
         <SubsectionTitle :chapter="chapterName" section="Funciones" subsection="Declaración de Funciones" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Hay varias formas de declarar funciones en JavaScript
             <NQuote name="functionsECMA" link="https://tc39.es/ecma262/#sec-function-definitions"
                 summary="ECMA262 2025 - 15.2 - Function Definitions" :chapter="chapterName" />
@@ -668,14 +668,14 @@ function saludar(nombre) {
 saludar("Maria"); // Salida: Hola, Maria!
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Nótese la sintaxis, se coloca la palabra reservada <code>function</code> luego
             el nombre o identificador de la función, en nuestro caso <code>saludar</code>.
             Luego se abren paréntesis y se enumeran los argumentos, en nuestro caso solo tenemos
             un argumento: <code>nombre</code>. Si tuvieramos mas parámetros deberíamos enumerarlos
             y separarlos con comas, por ejemplo <code>nombre, apellido, dni</code>.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Para invocar el código dentro de nuestra función debemos usar el identificador y proveerle
             un argumento (en nuestro caso la función sólo posee un argumento) que hará las veces
             de <code>nombre</code> y deberá encerrarse entre paréntesis inmediatamente a continuación
@@ -686,7 +686,7 @@ saludar("Maria"); // Salida: Hola, Maria!
             que proveamos al llamarlas, es decir es código que adapta a nuestras necesidades y que no
             necesitamos reescribir.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             También se puede declarar una función asignandola a una variable mediante una expresión
             de función:
         </p>
@@ -720,7 +720,7 @@ const cuadrado = x => x * x;
 console.log(cuadrado(4)); // Salida: 16
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p v-if="false" class="mt-2 mb-2 text-justify">
             <span class="text-red-800 font-bold">Advertencia:</span> Las funciones declaradas con la notación de flecha no son equivalentes a las funciones declaradas
             con la notación convencional (los dos primeros casos). Las razones de esto se veran mas adelante, ya que
             provienen de como ven su contexto estas funciones, y todavía no hemos hablado de ese contexto.
@@ -733,7 +733,6 @@ console.log(cuadrado(4)); // Salida: 16
 
 <script setup>
 import { computed, onMounted } from 'vue';
-import { useAngleStore } from '~~/scripts/stores/angleStore';
 import ChapterTitle from './ChapterTitle.vue';
 import SectionTitle from './SectionTitle.vue';
 import SubsectionTitle from './SubsectionTitle.vue';
@@ -741,17 +740,11 @@ import { useBibliographyStore } from '~/scripts/stores/bibliographyStore';
 import NQuote from './NQuote.vue';
 
 onMounted(() => {
-    useAngleStore().addAngleOn('chapter2', () => { });
-    useAngleStore().addAngleOff('chapter0');
     useBibliographyStore().registerChapter('Variables, estructuras de control y funciones');
 })
 
-const bibliography = [
-    'islooselyequal'
-];
-
 const rightName = 'chapter2';
-const leftName = 'chapter0';
+const leftName = 'frontpage';
 
 const chapterName = 'Variables, estructuras de control y funciones';
 const helloSectionName = 'Hola mundo'; //sección de hola mundo
@@ -779,8 +772,5 @@ const htmlCode = `
 \<\/html\>
 `
 
-function n(name) {
-    return bibliography.indexOf(name) + 1;
-}
 
 </script>

@@ -1,8 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { log
-    
- } from "../logging";
+import { log } from "../logging";
 export const useVisibleStore = defineStore("visible", () => {
     const comp = ref();
     function getVisibleComponentName(){

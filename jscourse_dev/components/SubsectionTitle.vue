@@ -1,5 +1,5 @@
 <template>
-    <h5 class="mt-2 mb-2 text-xl font-bold text-black-700">
+    <h5 class="mt-2 mb-2 text-justify text-xl font-bold text-black-700">
         {{ `${chapterNumber}.${sectionNumber}.${subsectionNumber} - ${props.subsection}` }}
     </h5>
         
