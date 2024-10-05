@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { useAngleStore } from '~~/scripts/stores/angleStore';
+import { useVisibleStore } from '~/scripts/stores/visibleStore';
 import { computed } from 'vue';
 
 const props =defineProps({
@@ -19,12 +19,33 @@ const props =defineProps({
     leftAngleName: String
 })
 
-const angleStore = useAngleStore();
 
-const isRight = computed(() => useAngleStore().isVisible(props.rightAngleName));
-const isLeft = computed(() => useAngleStore().isVisible(props.leftAngleName));
-const rightFunction = computed(() => useAngleStore().getFunction(props.rightAngleName));
-const leftFunction = computed(() => useAngleStore().getFunction(props.leftAngleName));
+const visibleStore = useVisibleStore();
+
+const isRight = computed(() => {
+    return props.rightAngleName !== undefined;
+});
+const isLeft = computed(() => {
+    return props.leftAngleName !== undefined;
+});
+const rightFunction = computed(() => {
+    if(props.rightAngleName === undefined){
+        return function() {};
+    } else {
+        return function() {
+            visibleStore.setVisibleComponentName(props.rightAngleName);
+        }
+    }
+});
+const leftFunction = computed(() => {
+    if(props.leftAngleName === undefined){
+        return function() {};
+    } else {
+        return function() {
+            visibleStore.setVisibleComponentName(props.leftAngleName);
+        }
+    }
+});
 
 
 </script>

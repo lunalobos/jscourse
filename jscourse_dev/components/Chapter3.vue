@@ -3,11 +3,14 @@
         <Angles :right-angle-name="rightName" :left-angle-name="leftName" />
         <ChapterTitle :name="chapterName" />
         <SectionTitle :chapter="chapterName" section="Arrays" />
-        <p class="mt-2 mb-2">
-            Un array es una colección ordenada de elementos. En JavaScript, los arrays pueden contener 
+        <p class="mt-2 mb-2 text-justify">
+            Un array 
+            <NQuote name="array" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+                summary="Array - JavaScript | MDN" :chapter="chapterName" />
+            es una colección ordenada de elementos. En JavaScript, los arrays pueden contener 
             elementos de cualquier tipo de datos, incluidos otros arrays.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Para crear un array en JavaScript, se pueden utilizar corchetes `[]` o el constructor `Array`.
         </p>
         <pre>
@@ -16,7 +19,7 @@ let array1 = [1, 2, 3, 4, 5];
 let array2 = new Array(1, 2, 3, 4, 5);
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Los elementos de un array se acceden utilizando índices, comenzando desde 0.
         </p>
         <pre>
@@ -26,7 +29,7 @@ let lastElement = array1[array1.length - 1]; // 5
             </code>
         </pre>
         <SubsectionTitle :chapter="chapterName" section="Arrays" subsection="Metodos de arrays" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             JavaScript proporciona varios métodos útiles para manipular arrays, tales como `push`, 
             `pop`, `shift`, `unshift`, `map`, `filter`, y `reduce`.
         </p>
@@ -40,7 +43,7 @@ let sum = array1.reduce((acc, x) => acc + x, 0); // 15
             </code>
         </pre>
         <SubsectionTitle :chapter="chapterName" section="Arrays" subsection="Rest Parameters en funciones" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Ahora que estamos mejor familiarizados con los arrays en JavaScript, vamos a ver un ejemplo de uso de rest parameters en una función.
             Este tipo de parámetros permiten representar un número indefinido de argumentos como un array:
         </p>
@@ -54,11 +57,14 @@ console.log(sumar(1, 2, 3, 4)); // Salida: 10
             </code>
         </pre>
         <SectionTitle :chapter="chapterName" section="Sets" />
-        <p class="mt-2 mb-2">
-            Un set es una colección de valores únicos. Los sets permiten almacenar cualquier tipo de valor, 
+        <p class="mt-2 mb-2 text-justify">
+            Un set 
+            <NQuote name="set" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+                summary="Set - JavaScript | MDN" :chapter="chapterName" />
+            es una colección de valores únicos. Los sets permiten almacenar cualquier tipo de valor, 
             ya sea primitivo u objeto.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Para crear un set en JavaScript, se utiliza el constructor `Set`.
         </p>
         <pre>
@@ -67,7 +73,7 @@ let set = new Set([1, 2, 3, 4, 5, 5]);
 console.log(set); // Set { 1, 2, 3, 4, 5 }
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Los sets tienen métodos para añadir, eliminar y verificar la existencia de elementos.
         </p>
         <pre>
@@ -78,11 +84,14 @@ console.log(set.has(4)); // true
             </code>
         </pre>
         <SectionTitle :chapter="chapterName" section="Mapas" />
-        <p class="mt-2 mb-2">
-            Un mapa es una colección de pares clave-valor donde las claves pueden ser de cualquier tipo
+        <p class="mt-2 mb-2 text-justify">
+            Un mapa 
+            <NQuote name="map" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map"
+                summary="Map - JavaScript | MDN" :chapter="chapterName" />
+            es una colección de pares clave-valor donde las claves pueden ser de cualquier tipo
             de datos.
         </p>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Para crear un mapa en JavaScript, se utiliza el constructor `Map`.
         </p>
         <pre>
@@ -92,7 +101,7 @@ map.set("name", "Dave");
 map.set("age", 40);
             </code>
         </pre>
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             Los mapas tienen métodos para añadir, eliminar y obtener elementos.
         </p>
         <pre>
@@ -109,7 +118,7 @@ console.log(map.has("age")); // false
         </p>
         <SubsectionTitle :chapter="chapterName" section="Ejemplo integrador" 
             subsection="Código HTML y JavaScript" />
-        <p class="mt-2 mb-2">
+        <p class="mt-2 mb-2 text-justify">
             El siguiente código HTML incluye un menú desplegable y un botón. El JavaScript asociado 
             llena el menú desplegable con valores de un array y muestra una alerta con la opción 
             seleccionada cuando se hace clic en el botón.
@@ -119,21 +128,25 @@ console.log(map.has("age")); // false
                 {{ html }}
             </code>
         </pre>
-        <p class="mt-2 mb-2">
-            El script JavaScript se ejecuta cuando el contenido del DOM ha sido completamente cargado. 
+        <p class="mt-2 mb-2 text-justify">
+            El script se ejecuta cuando el contenido del DOM ha sido completamente cargado. 
             Se define un array de opciones y se utiliza para llenar el elemento `select` con opciones. 
             Al hacer clic en el botón, se muestra una alerta con la opción seleccionada.
         </p>
-        <ul>
+        <ul class="ps-5 mt-2 space-y-1 list-disc list-inside">
             <li><strong><code>optionsArray</code></strong>: Array que contiene las opciones del menú desplegable.</li>
             <li><strong><code>selectElement</code></strong>: Referencia al elemento <code>&lt;select&gt;</code> en el DOM.</li>
             <li><strong><code>forEach</code></strong>: Itera sobre cada elemento del array, creando y añadiendo un elemento <code>&lt;option&gt;</code> al menú desplegable.</li>
             <li><strong><code>addEventListener</code></strong>: Añade un evento de clic al botón que muestra una alerta con la opción seleccionada.</li>
         </ul>
-        
+        <Bibliography :chapter="chapterName" />
     </div>
 </template>
 <script setup>
+import { useBibliographyStore } from '~/scripts/stores/bibliographyStore';
+onMounted(() => {
+    useBibliographyStore().registerChapter('Estructuras de datos');
+})
 
 const chapterName = 'Estructuras de datos';
 const rightName = 'chapter4';
