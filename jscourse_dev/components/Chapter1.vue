@@ -720,7 +720,7 @@ const cuadrado = x => x * x;
 console.log(cuadrado(4)); // Salida: 16
             </code>
         </pre>
-        <p class="mt-2 mb-2 text-justify">
+        <p v-if="false" class="mt-2 mb-2 text-justify">
             <span class="text-red-800 font-bold">Advertencia:</span> Las funciones declaradas con la notación de flecha no son equivalentes a las funciones declaradas
             con la notación convencional (los dos primeros casos). Las razones de esto se veran mas adelante, ya que
             provienen de como ven su contexto estas funciones, y todavía no hemos hablado de ese contexto.
